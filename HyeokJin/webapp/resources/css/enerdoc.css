@@ -1,0 +1,501 @@
+@charset "utf-8";
+
+h3.doch3{ margin-bottom:15px; font-size:18px; }
+h3.doch3 a i{color: #333; font-size: 20px;}
+h4.doch4{ margin-bottom:15px; font-size:16px; font-weight:bold;}
+h4.doch4:before{content: ""; display: inline-block; background-color: #333; width: 4px; height: 4px; vertical-align: middle; margin-right: 5px; position: relative; top: -1px;}
+
+/* 고객진단 */
+.tab_conlist{  padding: 50px 30px 35px 30px;  border-left: 1px solid #4c4d4f; border-right: 1px solid #4c4d4f; border-bottom: 1px solid #4c4d4f; }
+.doc_mbox{ overflow:hidden; }
+ul.dmb01 { width:349px; float:left; margin-right:63px; padding:36px 0 0 123px; background:url('../images/enerdoc/img_doclist01.jpg') no-repeat left 0;  }
+ul.dmb01 li{ padding-bottom:60px; font-size:16px; }
+ul.dmb02 { width:349px; float:left; margin-right:63px; padding:36px 0 0 123px; background:url('../images/enerdoc/img_doclist02.jpg') no-repeat left 0;  }
+ul.dmb02 li{ padding-bottom:59px;  font-size:16px; letter-spacing:-1px; }
+ul.dmb02 li:nth-child(4){ padding-bottom:73px; }
+ul.dmb02 li:nth-child(5){ padding-bottom:79px; }
+ul.dmb02 li:nth-child(6){ padding-bottom:80px; }
+ul.dmb02 li:nth-child(7){ padding-bottom:50px; }
+.imgbox{ width:590px; height:160px; float:left; margin-top:37px; padding-top:160px; border-radius:8px; background:#e3e4db; text-align:center; }
+
+
+/* 에너지원별 분석 */
+.enerdoc_tit{ height:120px; background:url('../images/enerdoc/bg_titenerdoc.jpg') no-repeat right bottom;  }
+.enerdoc_tit h2{ padding-top:30px; font-size: 24px; }
+
+.graphbox01{ overflow:hidden; margin-bottom:50px; padding-top:24px; border-top:2px solid #454545; }
+.graphbox01 .grpcon{ float:left; margin-right:36px; }
+.graphbox01 .grpcon:last-child{ margin-right:0; }
+.graphbox01 .grpcon strong{ display:inline-block; margin-bottom:11px; font-size:18px; }
+.graphbox01 .grpcon strong img{ margin-right:10px; }
+.graphbox01 .grpcon .grpcon_box{ width:350px; height:250px; border:1px solid #d5d5d5; }
+
+.dianbox{ overflow:hidden; }
+.dianbox table{ width:635px; float:left; margin-right:30px; }
+.dianbox div{ width:472px; height:330px; float:left; border-radius:6px; background:#e3e4db; }
+
+/* 추천상품 */
+p.doctxt{ margin-bottom:30px; padding: 27px 0; border: 1px solid #b6dada; background: #e4f2f2; text-align: center; font-size: 16px; }
+p.doctxt span{ color: #12b1b1; }
+
+ul.doc_prolist{ margin-bottom:50px; }
+ul.doc_prolist li{ margin-bottom:7px; }
+ul.doc_prolist li:last-child{ margin-bottom:0; }
+
+.prolist_box{ overflow:hidden; margin-bottom:50px; }
+.prolist_box .prolist_bleft{ width:430px; float:left; margin-right:50px; }
+.prolist_box .prolist_bleft strong{ display:inline-block; margin-bottom:15px; font-size:16px; }
+.prolist_box .prolist_bright{ width:640px; float:left; }
+.prolist_box .prolist_bright strong{ display:inline-block; margin-bottom:15px; font-size:16px; }
+
+select.docsel{ width:220px; height:30px; border:1px solid #ababab; }
+input.docsel{ width:220px; height:30px; border:1px solid #ababab; }
+img.arrw_r{ display:inline-block; margin:0 12px; }
+
+/* 간기 경제성 분석 */
+h3.center_h3{ margin-bottom:35px; text-align:center; font-size:24px; }
+
+.graphbox02{ overflow:hidden; margin-bottom:60px; }
+.graphbox02 strong{ display:block; margin-bottom:17px; font-size:18px; }
+.graphbox02 .grp_con{ width:250px; height:252px; float:left; margin-right:70px; padding-right:78px; border-right:1px solid #dadada; text-align:center; }
+.graphbox02 .grp_con:last-child{ margin-right:0; padding-right:0; border-right:0; }
+.graphbox02 .grp_con span{ display:block; padding:12px 0 17px 0; }
+
+.total_finsh{ width:800px; margin:0 auto 40px auto; }
+.total_finsh ul{  }
+.total_finsh ul li{ margin-bottom:7px; }
+.total_finsh ul li:last-child{ margin-bottom:0; }
+
+.inves_l{ width:390px; float:left; margin:0 70px 0 40px; }
+.inves_r{ width:638px; float:left; }
+
+.guid_num .gn_left strong{ float: left; margin: 6px 10px 0 0; }
+
+a.rebtn{ display:inline-block; padding:6px 13px 8px 13px; border:1px solid #6d6d6d; background:#454545; text-align:center; font-size:12px; color:#fff !important; }
+a.rebtn em{ padding-right:11px; background:url('../images/enerdoc/btn_ico.jpg') no-repeat right 3px; }
+
+a.svbtn{ display:inline-block; padding:6px 13px 8px 13px; border:1px solid #12b1b1; background:#fff; text-align:center; font-size:12px; color:#12b1b1 !important; }
+a.svbtn em{ padding-right:11px; background:url('../images/enerdoc/btn_ico02.jpg') no-repeat right 3px; }
+
+a.dwbtn{ display:inline-block; width:105px; padding:6px 0 8px 0; background:#f97115; text-align:center; font-size:12px; color:#fff; }
+
+a.dellbtn{ display:inline-block; padding:6px 20px 8px 20px; background:#6d6d6d;  font-size:12px; color:#fff; }
+
+/* 진단 이력 관리 */
+.total_prh{ overflow:hidden; padding:30px; border:1px solid #4c4d4f; }
+.total_prh .tph_con{ width:225px; float:left; margin-right:58px; text-align:center; }
+.total_prh .tph_con:last-child{ margin-right:0; }
+.total_prh .tph_con span{ display:inline-block; margin-bottom:35px; font-size:16px; }
+.total_prh .tph_con ul{ margin:30px 0 0 70px; text-align:left; }
+.total_prh .tph_con ul li{ margin-bottom:7px; }
+.total_prh .tph_con ul li:last-child{ margin-bottom:0; }
+
+
+/* ############################# */
+
+/* 외부 enerdoc */
+/* common */
+.clearfix:after{content: ""; display: block; clear: both;}
+.f_red{color: #e5412d !important;}
+.f_green{color: #22ac38 !important;}
+sup{line-height: 100%;}
+
+/* form */
+
+select.slt_style{border: 1px solid #c4c4c4; height: 43px; font-size: 14px; color: #4c4d4f; background-color: #fff; -webkit-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; background:#fff url('../images/enerdoc/bg_select.png') no-repeat right center; }
+button{border: none; background: none;}
+select::-ms-expand {display: none;}
+
+/* btn */
+.btnLine {clear: both;}
+.btnLine:after{content:""; display: block; clear: both;}
+.btnLine .btnCenter{text-align: center;}
+.btn{display: inline-block; text-align: center; font-size: 14px;}
+.btn.btn-m{font-size: 18px; line-height: 40px; padding: 0 40px; border-radius:20px; margin: 0 5px;}
+.btn.btn-s{font-size: 14px; line-height:34px; padding: 0 20px; border-radius:17px;}
+.btn.btn-green{color: #fff; background-color: #12b1b1;}
+.btn.btn-green-line{color: #12b1b1; border: 1px solid #12b1b1;}
+/* ESS 경제성 */
+.btnCenter{text-align: center;}
+.btn.btn-m02{font-size: 18px; line-height: 38px; padding: 0 20px; border-radius:20px; margin: 0 5px;}
+.btn.btn-y{color: #fff; background-color: #f97115;}
+
+/* table */
+/*table{table-layout:fixed;}*/
+.table_default{}
+.table_default th{background-color: #e7e9ea; height: 50px;border-right: 1px solid #454545; }
+.table_default tr.s_head th{ height:30px;}
+.table_default td{text-align: center; border-top: 1px solid #454545; padding-top:6px; padding-bottom:6px; border-right: 1px solid #454545; border-bottom: 1px solid #454545;}
+.table_default tr td:last-child{border-right:none;}
+.table_default tr th:last-child{border-right:none;}
+
+.table-energy{ }
+.table-energy th{border-bottom: 1px solid #454545; height: 40px; font-weight: bold;}
+.table-energy td{padding: 8px 0 0 0; text-align: center; background-color: #f4f5f5;}
+.table-energy td input{ width:265px; height:40px; text-align: center;}
+.table-energy .line{border-left: 1px solid #454545;}
+
+.graph-table {border-top:2px solid #454545;}
+.graph-table img{ width:100%; }
+.graph-table th{border-left: 1px solid #454545; height: 40px; font-weight: bold;border-bottom:1px solid #454545; }
+.graph-table td{border-left: 1px solid #454545; text-align: center;border-bottom:1px solid #454545; padding:  20px 0; font-weight: bold;}
+.graph-table tr th:first-child {border-left: none;}
+.graph-table tr td:first-child {border-left: none;}
+.graph-table tr.info td{text-align: left; color: #4c4d4f; background-color: #f4f5f5; padding-left:30px; padding-right:30px; letter-spacing: -1px;}
+.graph-table tr.info td ul li{margin:2px 0; position: relative; padding-left: 10px; font-weight: normal;}
+.graph-table tr.info td ul li:before{content: ""; display: inline-block; background-color: #333; width: 4px; height: 4px; vertical-align: middle; margin-right: 5px; position: relative; top: -1px; margin-left: -10px;}
+.graph-table tr.total td{font-size: 16px;}
+.graph-table tr.graph td{padding: 0;}
+
+.table_scroll tbody{overflow-y: auto; display: block; width: 100%;  overflow-x: hidden;}
+.table_scroll thead,.table_scroll tbody tr {display:table; width:100%; table-layout:fixed;}
+.table_scroll thead {width: calc( 100% - 17px )}
+.table_scroll .col01{width:55px;}
+.table_scroll .col02{width:135px;}
+.table_scroll .col03{width:215px;}
+.table_scroll .col04{width:85px;}
+.table_scroll .col05{width:75px;}
+
+/* 마이페이지, 에너닥 css */
+.customerSearch {background-color: #e4f2f2; border-top: 1px solid #b6dada; border-bottom: 1px solid #b6dada; padding:10px 25px 0 25px; margin-bottom: 50px; }
+.customerSearch label{display: block; font-size: 14px; color: #4c4d4f; font-weight: bold; margin-top: 10px; line-height: 30px; padding-left: 10px;}
+.customerSearch select{ width:190px; padding-left: 10px;}
+.customerSearch .btnLine{padding: 20px 0; border-top: 1px dotted #333; margin-top: 30px;}
+.customerSearch .selectForm p{ float: left; margin-left:40px; }
+.customerSearch .selectForm p:first-child{margin-left: 0;}
+.customerSearch .selectForm p select{float: left;}
+.customerSearch .selectForm .dateSelect select{float: left; width:158px;}
+.customerSearch .selectForm .dateSelect span{display: inline-block; float: left; width:20px; text-align: center; line-height: 44px;}
+/* ESS 경제성 */
+.customerSearch label em{ display: block; padding-left:11px; background:url('../images/enerdoc/ico_star.png') no-repeat left 14px;  }
+.customerSearch .selectForm { position:relative; }
+.customerSearch .selectForm p.typ02{ float: left; margin-left:30px; }
+.customerSearch .selectForm p.typ02:first-child{margin-left: 0;}
+.customerSearch .selectForm p.typ02 select{float: left; width:243px; border: 1px solid #c4c4c4;  height: 43px;  font-size: 14px;  color: #4c4d4f; background-color: #fff;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+box-sizing: border-box;
+background: #fff url('../images/enerdoc/bg_select.png') no-repeat right center; }
+.customerSearch .selectForm p.typ02 span{ display:block; margin:5px 0 0 25px; text-indent: -14px; line-height: 18px; font-size:12px; }
+.customerSearch .selectForm p.typ02 span.typtxt{ display:block; margin:40px 0 0 25px; text-indent: -14px; line-height: 18px; font-size:12px; }
+.customerSearch .selectForm p.typ02 span.typtxt2{ display:block; margin:10px 0 0 25px; text-indent: -14px; line-height: 18px; font-size:12px;}
+
+em.btr_tit{ display:block; margin-bottom:10px; padding-left:11px; background:url('../images/enerdoc/ico_star.png') no-repeat left 6px;  font-size:14px; }
+em.mhs{ position:absolute; top:52px; left:255px; }
+em.mhs02{ position:absolute; top:52px; left:530px; }
+
+
+table.btrtb{ border-top:2px solid #454545; border-left:1px solid #454545; }
+table.btrtb tr th{ padding:10px 0 12px 0; border-bottom:1px solid #454545; border-right:1px solid #454545;background:#9fc0f3;  }
+table.btrtb tr.btrtb_bg01 th{ background:#c7c9cb; }
+table.btrtb tr td{ padding:10px 0 12px 0;  background:#fff; border-bottom:1px solid #454545; border-right:1px solid #454545; text-align:center; }
+table.btrtb tfoot tr th{ background:#fff; }
+
+.customerSearch .selectForm .dateSelect select{float: left; width:155px;}
+.customerSearch .selectForm .dateSelect span{display: inline-block; float: left; width:20px; text-align: center; line-height: 44px;}
+
+.buildingInfo{background-color: #f4f5f5; border-top: 2px solid #454545; border-bottom: 1px solid #d5d5d5; padding:25px 0 40px 30px; margin-bottom: 50px;}
+.buildingInfo label{display: block; font-size: 14px; color: #4c4d4f; font-weight: bold; margin-top: 10px; line-height: 30px; padding-left: 10px;}
+.buildingInfo select,.buildingInfo input{ width:255px; padding-left: 10px;}
+.buildingInfo .line p{float: left; margin-left:20px; }
+.buildingInfo .line p select,.buildingInfo .line p input{float: left;}
+.buildingInfo .line p input{ width:241px; height:38px; }
+.buildingInfo .line p:first-child {margin-left: 0;}
+/* ESS 경제성 */ 
+.selectForm p select{float: left;}
+.selectForm p input{ width:219px; height:38px; text-align: right; padding:0 20px 0 0; color:#4c4d4f; }
+
+.subtitle{color: #4c4d4f; font-weight: bold;}
+
+.graph_energy {border-top: 2px solid #333; border-bottom: 1px solid #333; text-align: center; margin-bottom: 30px; padding-bottom: 35px;}
+.graph_energy .grapgArea{min-height: 435px;}
+.graph_energy .grapgArea img{ width:100%; }
+.graph_energy .graphInfo{font-weight: bold; margin-bottom: 10px;}
+.graph_energy .graphInfo a{font-size: 20px; color: #333; font-weight: normal;}
+.graph_energy p:last-child{ letter-spacing: -0.8px; }
+
+.poolArea .mapArea{float: left; width:545px; height: 364px; border: 1px solid #333; box-sizing: border-box;}
+.poolArea .poolInfo{float: right; width:575px;}
+.poolArea .tableWrap{height: 360px; overflow-y: scroll; overflow-x: hidden; border-top:2px solid #454545; border-bottom: 1px solid #454545;}
+.poolArea .poolInfo .caution{margin-top: 15px;}
+
+.statsText{text-align: center; font-size: 16px; line-height: 24px; padding-bottom: 30px; border-bottom: 1px dotted #777777; margin-bottom: 50px;}
+.statsTitle{text-align: center; font-size: 21px; padding-bottom: 30px; border-bottom: 1px dotted #777777; margin-bottom: 50px;}
+.statsTitle b{color: #12b1b1;}
+.statsTitle.non-pad{margin-bottom: 0; border-bottom: none;}
+.energyInfo{position: relative; height: 45px;}
+.energyInfo .btnRight{position: absolute; right: 0; top: 0;}
+.energyTableArea{margin-bottom:40px; height: 700px; overflow-y: auto; border-top:2px solid #454545; border-bottom:1px solid #454545;}
+
+.change_graph>li{float: left; width:368px; margin-left: 16px; box-sizing: border-box;}
+.change_graph>li:first-child{margin-left: 0;}
+.change_graph>li .graph img{ width:100%; }
+.change_graph>li .info{border:1px solid #d5d5d5; padding:10px; height: 165px;}
+.change_graph>li .info .lineGraph{float: left; width: 165px; height: 165px;}
+.change_graph>li .info ul{float: right; width: 160px;}
+.change_graph>li .info ul li{margin-top: 15px; position: relative; padding-left:5px; color: #4c4d4f;}
+.change_graph>li .info ul li:before{content: ""; display: inline-block; background-color: #4c4d4f; width:2px; height: 2px; vertical-align: middle; margin-right: 5px; position: absolute; left: 0; top: 8px;}
+
+.che_point_info .table {width:610px;float:left;}
+.che_point_info .info {width: 510px;float: right;}
+.che_point_info .info dl{ font-weight: bold; margin-bottom: 25px;}
+.che_point_info .info dl dt{position: relative; padding-left:8px; line-height: 24px;}
+.che_point_info .info dl dt:before{content: ""; display: inline-block; background-color: #4c4d4f; width:2px; height: 2px; vertical-align: middle; margin-right: 5px; position: absolute; left: 0; top:12px;}
+.che_point_info .info dl dd{padding-left: 10px; line-height: 24px; position: relative; margin-left: 10px;}
+.che_point_info .info dl dd:before{content: ""; display: inline-block; background-color: #4c4d4f; width:5px; height: 1px; vertical-align: middle; margin-right: 5px; position: absolute; left: 0; top:12px;}
+.che_point_info .tableWrap{border-top:2px solid #454545; border-bottom: 1px solid #454545;}
+
+.chg_point{margin-bottom: 50px; border-top:2px solid #454545;}
+.chg_point li{float: left; box-sizing: border-box; width:355px; padding-top: 20px; padding-left:30px; margin-left: 30px;}
+.chg_point li:first-child{margin-left: 0;}
+.chg_point li .tit{font-weight: bold; font-size: 18px;}
+.chg_point li .graphArea {position: relative;}
+.chg_point li .graphArea .graph{border: 1px solid #; width: 354px; overflow: hidden; border: 1px solid #d5d5d5; margin-top: 10px; width: 100%; }
+.chg_point li .graphArea .graph img{ width: 100%; }
+.chg_point li .graphArea .graphTxt01{position: absolute; transform: rotateZ(-90deg); transform-origin: 0 0; left: -30px; bottom: 100px;}
+.chg_point li .graphArea .graphTxt02{text-align: center; margin-top: 15px;}
+
+.slideBox{margin-bottom: 30px;}
+.slideBox h3{color: #fff; font-weight: bold; font-size: 20px; background-color: #12b1b1; padding-left: 30px; line-height: 70px; position: relative;}
+.slideBox h3 a{color: #fff; position: absolute; display: block; width: 70px; height: 70px; text-align: center; line-height: 70px; font-size: 40px; right:0; top: 0; transition: all 0.2s ease;}
+.slideBox h3 a.active{transform: rotateZ(180deg)}
+.slideBox h3 a i{line-height: 70px; font-weight:100 !important;}
+
+.slideBox .slideCon{padding:40px 10px 0 10px;}
+
+.slideBox .slideCon .leftTable{ width: 600px; float: left;}
+.slideBox .slideCon .leftTable table{border-top: 2px solid #454545; font-size: 14px;}
+.slideBox .slideCon .leftTable table th{border-bottom:1px solid #454545; background-color: #e7e9ea; font-weight: bold; height: 30px;}
+.slideBox .slideCon .leftTable table tr th:first-child{border-right:1px solid #454545;}
+.slideBox .slideCon .leftTable table tr td:first-child{border-right:1px solid #454545;}
+.slideBox .slideCon .leftTable table td{border-bottom:1px solid #454545; height: 30px; padding:  0 20px;}
+.slideBox .slideCon .leftTable table td.center{text-align: center;}
+.slideBox .slideCon .leftTable table tr:hover td{background-color: #e4f2f2;}
+.slideBox .slideCon .productInfo{ width: 640px; float: right;}
+.slideBox .slideCon .productInfo .product{margin-left: 20px; width: 300px; box-sizing: border-box; border: 1px solid #d5d5d5; float: left; height: 282px;}
+.slideBox .slideCon .productInfo .product h4{background-color: #e4f2f2; padding-left: 20px; font-weight: bold; height: 34px; border-bottom: 1px solid #d5d5d5; line-height: 34px; font-size: 14px;}
+.slideBox .slideCon .productInfo .product dl{padding: 20px;}
+.slideBox .slideCon .productInfo .product dl dt{font-size: 16px; color: #12b1b1;}
+.slideBox .slideCon .productInfo .product dl dd{margin-top: 10px; padding-left: 8px; position: relative;}
+.slideBox .slideCon .productInfo .product dl dd:before{content: ""; display: inline-block; background-color: #4c4d4f; width:2px; height: 2px; vertical-align: middle; margin-right: 5px; position: absolute; left: 0; top: 10px;}
+.subSlide{border: 1px solid #12b1b1; border-top: none;}
+.subSlide h4{ position: relative; font-size: 18px; color: #12b1b1; padding-left: 30px; height: 50px; line-height: 50px; position: relative; font-weight: bold;}
+.subSlide h4:after{content: "\f068"; display: block; width: 50px; height: 50px; text-align: center; line-height: 50px; color: #f05a46; font-family: "FontAwesome"; position: absolute; right: 0; top: 0; cursor: pointer; font-weight: 100;}
+.subSlide h4.active:after{content: "\f067";}
+.subSlide .subSlideCon{padding: 30px 40px;border-top: 1px solid #12b1b1;}
+.subSlide .subSlideCon .typeSelect{border-top: 1px solid #ccc; width: 260px; float: left; margin-top: 40px;}
+.subSlide .subSlideCon .typeSelect li{border-bottom: 1px solid #ccc; height: 40px; line-height: 40px;}
+.subSlide .subSlideCon .typeSelect li a{color: #4c4d4f; padding-left: 20px;}
+.subSlide .subSlideCon .typeSelect li a:hover{color: #12b1b1;}
+.subSlide .subSlideCon .typeSelect li.active a{color: #12b1b1;}
+.subSlide .subSlideCon .detailChg {float: right; width: 840px;}
+.subSlide .subSlideCon h5{font-size: 18px; font-weight: bold;}
+
+table.table_recommend{border-top: 2px solid #454545; font-size: 14px; margin-top: 15px;}
+table.table_recommend th{border-bottom:1px solid #454545;  font-weight: bold; height: 40px;}
+table.table_recommend td{border-bottom:1px solid #454545; background-color: #f4f5f5; padding:  25px 0px;}
+table.table_recommend td ul li{padding: 7px 0;}
+table.table_recommend td label{display: inline-block; width: 160px; text-align: center;  font-weight: bold; color: #454545;}
+table.table_recommend td select{ width: 290px;}
+table.table_recommend td span.arrow{display: inline-block; width:30px ; text-align: center; color: #333; font-size: 20px; line-height: 44px; vertical-align: middle;}
+
+table.table_result{border-top: 2px solid #454545; font-size: 14px; margin-top: 15px;}
+table.table_result th{border-bottom:1px solid #454545;  font-weight: bold; height: 40px;}
+table.table_result td{border-bottom:1px solid #454545; height: 40px;  text-align: center;}
+table.table_result tfoot td{border-bottom:1px solid #454545; height: 40px;  background-color: #f4f5f5; font-weight: bold; text-align: center;}
+
+.subSlide.first{border-top: 1px solid #12b1b1;}
+
+.detail_graph{margin-top: 30px; margin-bottom: 45px;}
+.detail_graph li{float: left;text-align: center; width: 33.33%;}
+.detail_graph li p{font-weight: bold; font-size: 16px; margin-bottom:20px;}
+.detail_graph li .graph{ width: 200px; height: 200px; margin: auto;}
+
+.layerPopup{position: absolute; top: 0; z-index: 50; text-align: center; width: 100%;}
+.overay-layer{position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,0.5); z-index: 100; display: none;}
+
+.popup-layer{background-color: #fff; position: fixed; width: 700px; left:50%;top: 50%; margin-left: -350px; margin-top: -50px; z-index: 101;display: none; box-shadow: 0 0 15px rgba(0,0,0,.3)}
+.popup-layer h2{color: #fff; font-size: 18px; background-color: #12b1b1; padding-left: 40px; height: 45px; line-height: 45px;}
+.popup-layer .btnClose{color: #fff; font-size: 20px; position: absolute; top: 0; right: 0;}
+.popup-layer .btnClose a{display: block; width: 45px; height: 45px; line-height: 46px; text-align: center; color: #fff;}
+.popup-layer .btnClose a i{line-height: 46px;}
+
+.fa { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit;  text-rendering: auto; -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale; }
+.fa-question-circle:before {  content: "\f059";}
+
+/* 추가페이지 */
+input.yak_input{ width:115px; height:25px; border:1px solid #ababab; text-align:center; }
+
+.enerwonbox{ margin-top:50px; padding:30px 100px 15px 100px; border:1px solid #d5d5d5; text-align:center; }
+.enerwonbox strong{ display:block; margin-bottom:25px; font-size:18px; }
+
+.fac_box{ overflow:hidden; }
+.fac_box .faclist_bleft{ width:215px; float:left; margin-right:50px; }
+.fac_box .faclist_bright{ width:870px; float:right; }
+
+/* 태양광 */
+img.jstab{ display:block; margin-bottom:30px; }
+.searchbox{ overflow:hidden; margin-bottom:10px; }
+.searchbox .search_inpt{ float:left; margin-right:20px; }
+.searchbox .search_inpt input{ width:425px; height:11px; float:left; padding:15px 13px; border:1px solid #c4c4c4; color:#4c4d4f; }
+.searchbox select{ width:283px; height:43px; float:left; border:1px solid #c4c4c4; color:#4c4d4f; }
+/* 다음지도 */
+.daum_info {position:relative;top:5px;left:5px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;font-size:12px;padding:5px;background:#fff;list-style:none;margin:0;} 
+.daum_info:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}    
+.daum_info .label {display:inline-block;width:50px;}
+.daum_number {font-weight:bold;color:#00a0e9;} 
+
+/* ESS 경제성 */
+strong.analysis_tit{ display:block; position:relative; margin-bottom:20px; font-size:18px; }
+strong.analysis_tit a{ display:inline-block; position:absolute; top:0; right:0; padding:6px 15px 8px 15px; border-radius:15px; border:1px solid #12b1b1; font-size:14px; color:#12b1b1; }
+
+.analysis_pop{ position:absolute; top:150px; left:50%; width:382px; margin-left:-200px; padding:30px 0 20px 0; border:5px solid #009591; background:#fff; text-align:center; }
+.analysis_pop p{ margin-bottom:11px; font-size:16px; }
+.analysis_pop span{ display:block; margin-bottom:20px; font-weight:normal; font-size:14px; }
+
+
+.mapbox{ overflow:hidden; position:relative;  }
+.map_con{ float:left; margin-right:14px; }
+.map_choice{float:left; }
+.map_choice ul{ overflow:hidden; margin-bottom:30px; }
+.map_choice ul li{ width:96px; float:left; margin-right:10px; text-align:center;  }
+.map_choice ul li:last-child{ margin-right:0; }
+.map_choice ul li a{ display:block; padding:12px 0 13px 0; border-radius:6px; background:#d1d2d4; color:#fff; }
+.map_choice ul li a:hover{ background:#254061; }
+.map_choice ul li a.on{ background:#254061; }
+.map_choice ul li a img{ display:inline-block; margin-bottom:8px; }
+.map_choice strong{ display:block; border-bottom:2px solid #c9c9ca;  text-align:right; }
+.map_choice strong span{ display:inline-block; margin:0 4px 0 8px; font-size:36px; vertical-align:-2px; color:#f97115; }
+
+a.next_btn{ display:inline-block; position:absolute; bottom:0; right:0; width:140px; padding:9px 0 11px 0; border-radius:20px; background:#828282; text-align:center; color:#fff; }
+a.next_btn:hover{ background:#13b1b2; }
+a.next_btn.on{ background:#13b1b2; }
+
+a.nxtbtn{ display:inline-block; width:140px; padding:9px 0 11px 0; border-radius:20px; background:#828282; text-align:center; color:#fff; }
+a.nxtbtn:hover{ background:#13b1b2; }
+a.nxtbtn.on{ background:#13b1b2; }
+
+a.prebtn{ display:inline-block; width:140px; padding:9px 0 11px 0; border-radius:20px; background:#d1d2d4; text-align:center; color:#fff; }
+a.prebtn:hover{ background:#13b1b2; }
+a.prebtn.on{ background:#13b1b2; }
+
+a.save_btn{ display:inline-block; width:120px; padding:7px 0 9px 0; border-radius:20px; border:1px solid #d2d2d4; background:#fff; text-align:center; color:#d1d2d4; }
+a.save_btn:hover{ border:1px solid #12b1b1; color:#12b1b1; }
+a.save_btn.on{ border:1px solid #12b1b1; color:#12b1b1; }
+
+a.rec_btn{ display:inline-block; padding:7px 28px 9px 28px; border-radius:20px; background:#13b1b2; text-align:center; font-size:18px; color:#fff; }
+
+a.orangbtn{ display:inline-block; padding:9px 28px 11px 28px; border-radius:20px; background:#f97115; text-align:center;  color:#fff; }
+
+
+.info_inpbox{  }
+.info_inpbox em.btnright{ display:block; text-align:right; }
+strong.info_intit{ display:block; margin-bottom:17px; font-size:18px; }
+strong.info_intit02{ display:block; margin-bottom:10px; font-size:18px; }
+strong.info_intit02 span{ display:block; font-size:14px; }
+.info_inpbox em.btncentr{ display:block; margin-bottom:30px; text-align:center; }
+.btntwo{ text-align:center; }
+
+table.table_doc03{ margin-bottom:30px; border-top: 2px solid #454545; }
+table.table_doc03 thead tr th{  padding: 9px 0 11px 12px; border-right: 1px solid #454545; border-bottom: 1px solid #454545; background: #e9e9e9; text-align:center;  }
+table.table_doc03 thead tr th:last-child{ border-right:0; }
+table.table_doc03 tr th{ padding: 9px 0 11px 12px; border-right: 1px solid #454545;  border-bottom: 1px solid #454545; background: #e9e9e9; text-align:left; }
+table.table_doc03 tr td{ padding: 9px 0 11px 12px; border-bottom: 1px solid #454545; }
+table.table_doc03 tr.tdbr td{ border-right:1px solid #454545; }
+table.table_doc03 tr.tdbr02 td{ padding: 9px 12px 11px 0;  border-right:1px solid #454545; text-align:right; }
+table.table_doc03 tr.tdbr td:last-child{ border-right:0; }
+table.table_doc03 tr .txtcnt{ text-align:center; }
+table.table_doc03 tr td input.inpty01{ width:180px; height:11px; padding:6px 5px 8px 5px; border: 1px solid #b5b5b5; }
+table.table_doc03 tr td input.inpty02{ width:125px; height:11px; padding:6px 5px 8px 5px; border: 1px solid #b5b5b5; }
+table.table_doc03 tr td input.inpty03{ width:300px; height:11px; padding:6px 5px 8px 5px; border: 1px solid #b5b5b5; }
+table.table_doc03 tr td input.inpty04{ width:270px; height:11px; padding:6px 5px 8px 5px; border: 1px solid #b5b5b5; }
+table.table_doc03 tr td select{ width:160px; height:28px; }
+table.table_doc03 tr td textarea.textar_typ01{ width:93%; height:116px; padding:6px; border:1px solid #c4c4c4; }
+table.table_doc03 tr td textarea.textar_typ02{ width:93%; height:40px; padding:6px; border:1px solid #c4c4c4; }
+table.table_doc03 tr td textarea.textar_typ03{ width:93%; height:80px; padding:6px; border:1px solid #c4c4c4; }
+table.table_doc03 tr td em.numtxt{ display:block; margin:5px 12px 0 0; text-align:right; }
+table.table_doc03 .bdrl_tb{ border-left: 1px solid #454545; }
+
+.textarabox{ margin-bottom:30px; }
+.textarabox textarea{ width:490px; height:90px; margin-right:5px; border:1px solid #c2c6c7; }
+.textarabox em{ vertical-align: -39px; }
+
+.reportbox{ width:940px; margin:0 auto; padding:24px 30px 35px 30px; border:3px solid #e9e9e9; }
+.reportbox img.repor_titimg{ display:block; margin-bottom:90px; }
+.reportbox img.repor_titimg{ display:block; margin-bottom:90px; }
+.reportbox .repor_top{ width:812px; margin:0 auto; }
+.reportbox .repor_top strong{ display: block; margin-bottom:110px; font-size:42px; text-align:center; }
+.reportbox .repor_top ul{ margin-bottom:30px; }
+.reportbox .repor_top ul li{ margin-bottom:6px; }
+.reportbox .repor_top ul li:last-child{ margin-bottom:0; }
+.reportbox .repor_top ul li em{ display:inline-block; width:80px; }
+.reportbox .repor_top .repormap{ margin-bottom:180px; padding:1px; border:1px solid #cbcbcb; }
+.reportbox .repor_top p{ margin:0 0 70px -50px; text-indent: -11px; }
+
+.repor_con{ position:relative; padding:80px 0 0 0; }
+.repor_con strong.reptit{ position:absolute; top:0; left:-31px; width:204px; height:25px; padding:14px 0 18px 30px; background:url('../images/enerdoc/bg_tit.gif') no-repeat left 0; font-size:20px; color:#fff; }
+.repor_con span.reptit_s01{ display:block; margin-bottom:10px; font-size:18px; color:#12b1b1; }
+.repor_con span.reptit_s02{ display:block; margin-bottom:10px; font-size:18px;  }
+.repor_con .textaraboxs{ height:119px; margin-bottom:30px; padding:20px; border-radius:8px; border:3px solid #94d1ca; }
+
+span.stxt{ font-size:12px; }
+
+ul.paylist{ margin-bottom:25px; text-align:center; }
+ul.paylist li{ display:inline-block; width:170px; margin-right:50px; padding:30px 0 40px 0; border-radius:90px; border:8px solid #254061; text-align:center; font-size:18px; }
+ul.paylist li.totl01{ border:8px solid #2bb7b3; }
+ul.paylist li.totl02{ border:8px solid #94d1ca; }
+ul.paylist li.totl03 { border:8px solid #f97115 !important;  }
+ul.paylist li:last-child{ margin-right:0; }
+ul.paylist li em{ display: block; font-size:36px; }
+
+.corp_pay{ overflow:hidden; position:relative; margin-bottom:30px; }
+.corp_pay_con{ overflow:hidden; position:relative; margin-bottom:20px; }
+
+.corp_pay dl{ width:200px; float:left; margin-right:35px;  border-top:2px solid #303231; border-bottom:1px solid #303231; border-left:1px solid #303231; border-right:1px solid #303231; text-align:center; }
+.corp_pay dl dt{ padding:15px 0 17px 0; border-bottom:1px solid #303231;  background:#e9e9e9; }
+.corp_pay dl dd{ padding:15px 0 17px 0; font-size:18px; }
+.corp_pay .cpc_clo{ color:#2bb7b3; }
+.corp_pay dl:last-child{ float: right; margin-right:0;  }
+.corp_pay img.typimg01{ display:inline-block; float:left; margin:40px 35px 0 0; }
+.corp_pay img.typimg02{ display:inline-block;  position: absolute; right:320px; top: 48px;}
+.corp_pay img.typimg03{ display:inline-block; float:left; margin:45px 35px 0 0; }
+.corp_pay img.typimg04{ display:inline-block; float:left; margin:51px 35px 0 0; }
+.corp_pay img.typimg001{ display:inline-block; float:left; margin:10px 35px 0 0; }
+.corp_pay img.typimg0001{ display:inline-block; float:left; margin:0 10px 0 0; }
+.corp_pay img.typimg002{ display:inline-block;  position: absolute; right:225px; top:44px; }
+.corp_pay img.typimg0002{ display:inline-block;  position: absolute; right:320px; top:44px; }
+
+
+.corp_pay em{ display:inline-block; float:left; margin:34px 35px 0 0; font-size:18px; }
+p.txtso{ margin-left: 11px; text-indent: -11px; font-size:12px; }
+em.dantit{ display:block; margin-bottom:5px; text-align:right; }
+p.copytxt{ padding-left:10px; background:url('../images/enerdoc/bg_infotxt.gif') no-repeat left 6px;  line-height: 18px; font-size: 12px; }
+
+.corp_pay_con02{ overflow:hidden; position:relative;  margin-bottom:20px; padding:30px 50px; border:1px solid #454545; }
+.corp_pay_con02 .sulinfo{ width:130px; float:left; margin-right:75px; text-align: center; }
+.corp_pay_con02 .sulinfo:last-child{  float: right; margin-right:0;  }
+.corp_pay_con02 .sulinfo span{ display:block; font-size:18px; }
+.corp_pay_con02 strong.dayb{ display:inline-block; float:left; font-size:24px; }
+
+.corp_pay_con03{ overflow:hidden; position:relative; margin-bottom:20px; padding:30px 10px; border:1px solid #454545; }
+.corp_pay_con03 strong{ display:inline-block; float:left; margin-right:10px;  font-size:18px; }
+.corp_pay_con03 img{ display:inline-block; float:left; }
+.corp_pay_con03 img.cpc03img01{ margin:4px 10px 0 0; }
+.corp_pay_con03 img.cpc03img02{ margin:0 10px 0 0; }
+.corp_pay_con03 img.cpc03img03{ margin:0 20px; }
+.corp_pay_con03 img.cpc03img04{ margin:0 72px 0 0; }
+.corp_pay_con03 img.cpc03img05{ margin:10px 0 0 0; }
+.corp_pay_con03 .sulinfo{ width:210px; float:right; text-align: center; }
+.corp_pay_con03 .sulinfo span{ display:block; font-size:18px; }
+
+.newptop{ overflow:hidden; margin-bottom:20px; padding:24px 10px; border:1px solid #b6dada; background:#e4f2f2; }
+.newptop .nplist{ float:left; margin-right:20px; }
+.newptop .nplist:last-child{ margin-right:0; }
+.newptop .nplist em{ display:inline-block; float:left; margin:5px 5px 0 0;  }
+.newptop .nplist select{ width:80px; height:30px; }
+.newptop .nplist select.styp02{ width:140px; height:30px; }
+.newptop .nplist input.inpty01{ width:200px; height:26px; }
+.newptop .nplist input.inpty02{ width:100px; height:26px; }
+a.npbtn01{ display:inline-block; width:70px; padding:4px 0 8px 0; background:#6d6d6d; text-align:center; color:#fff; }
+a.npbtn02{ display:inline-block; width:90px; padding:4px 0 8px 0; background:#6d6d6d; text-align:center; color:#fff; }

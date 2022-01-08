@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+td, div, input, select	{ font-family: Arial, 맑은 고딕; font-size: 14px; color: #000; }
+textarea, text 	{ font-family: Arial, 맑은 고딕; font-size: 14px; color: #000; border: 1px solid #999999; }
+li { list-style:none; }
+
+
+/* login contents */
+.con_bg { background:#eeeeee; padding:35px 0px 35px 0px; }
+.con_box { width:438px; margin:0 auto; }
+.area_otp { display:inline-block; padding-top:8px; }
+/* .area_captcha { display:inline-block; padding-top:22px; } */
+
+.area_l { float:left; }
+.area_r { float:right; }
+
+.area_textfild { position: absolute; }
+.area_textfild01 { position:relative; padding:0px 0px 5px 0px; }
+.area_textfild02 { position:relative; float:left; }
+.area_textfild03 { padding:23px 0px 0px 0px; display:inline-block; }
+
+.area_btn01 { position:relative; float:right; }
+.area_btn02 { padding:23px 0px 0px 0px; float:right; }
+.area_btn03 { padding-left:9px; float:right; }
+
+
+/* login SNS */
+.sns_area { width:438px; margin:0 auto; }
+.sns_txt01 { text-align:center; font-size:16px; color:#525252; padding:50px 0px 10px 0px; }
+.sns_box { border:#d9d9d9 solid 2px; height:94px; margin-bottom:60px; }
+.sns_box > ul > li { float:left; padding:9px 57px 0px 0px; }
+.sns_box > ul > li.end { padding:9px 0px 0px 0px; }
+
+
+/* login captcha */
+.captcha_txt01 { background:url(../images/login/icon_02.png) no-repeat left 2px; float:left; padding:0px 0px 0px 15px; margin:4px 10px 0px 0px; font-size:11px; }
+.captcha_txt01 a { font-size:11px; }
+.captcha_txt01.end { background:url(../images/login/icon_03.png) no-repeat left 1px; }

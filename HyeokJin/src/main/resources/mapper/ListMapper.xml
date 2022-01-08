@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.list.mapper.ListMapper">
+
+	<select id="selectList" resultType="com.list.vo.ListVo">
+		select *, ((rnum-1) / #{pageSize}::numeric )+1 pageIdx
+		from (
+			select
+				ROW_NUMBER() OVER (ORDER BY listseq ASC) rnum, 
+				COUNT(1) OVER() totalCnt,
+				listseq,
+				title,
+				content,
+				id,
+				name,
+				cretr_id,
+				cret_dt,
+				amdr_id,
+				amd_dt
+			from 
+				portfolio.list
+			<where>
+			 	<if test="searchSel == 01">  
+					and title LIKE '%' || #{searchKeyword} || '%'
+				</if>
+				<if test="searchSel == 02">  
+					and content LIKE '%' || #{searchKeyword} || '%'
+				</if>
+				<if test="searchSel == 03">  
+					and cretr_id LIKE '%' || #{searchKeyword} || '%'
+				</if>
+			</where>
+		) a
+		order by rnum desc
+		limit #{pageSize}::numeric OFFSET ((#{pageIdx}::numeric -1) * #{pageSize}::numeric)
+	</select>
+	
+	<insert id="insertList" parameterType="hashmap" useGeneratedKeys="true" keyColumn="listseq" keyProperty="listseq">
+		insert into portfolio.list (
+			listseq,
+			title,
+			content,
+			id,
+			name,
+			cretr_id,
+			cret_dt
+		) values (
+			nextval('portfolio.seq_list_id'::regclass),
+			#{title},
+			#{content},
+			#{id},
+			#{name},
+			'test',
+			now()
+		);
+	</insert>
+
+	<update id="updateNotice" parameterType="hashmap" >
+		update
+			portfolio.list
+		set 
+			content=#{content},
+			amdr_id=#{userId},
+			amd_dt=now()
+		where 
+			listseq=#{listseq}::numeric
+	</update>
+
+	<delete id="deleteNotice" parameterType="hashmap" >
+		delete 
+			from portfolio.list
+		where 
+			listseq=#{listseq}::numeric
+	</delete>
+
+	<!-- 파일 등록 -->
+	<insert id="insertFile" parameterType="hashmap">
+		insert into portfolio.file_upld (
+			file_nm,
+			file_path,
+			listseq,
+			cret_dt
+		) values (
+			#{filesname},
+			#{filePath},
+			#{listseq}::numeric,
+			now()
+		);
+	</insert>
+
+	<delete id="deleteFile" parameterType="hashmap" >
+		delete 
+			from portfolio.file_upld
+		where 
+			listseq = #{upldSeq}::numeric
+	</delete>
+
+	<select id="selectDetail" resultType="com.list.vo.ListVo" >
+		select
+			pl.listseq,
+			pl.title,
+			pl.content,
+			pl.id,
+			pl.name,
+			fu.upld_seq,
+			fu.file_nm,
+			fu.file_path
+		from 
+			portfolio.list pl
+			left join portfolio.file_upld fu on(pl.listseq = fu.listseq) 
+		where 
+			pl.listseq=#{listseq}::numeric
+	</select>
+</mapper>
