@@ -52,8 +52,13 @@ public class ListController {
 		String searchKeyword = param.get("searchKeyword");
 
 		if((StringUtil.isNumeric(pageSize) == true) && (searchKeyword.length() < 100)) {
-			List<ListVo> data = listService.selectList(param);
-			resultMap.put("data", data);
+			try {
+				List<ListVo> data = listService.selectNoticeList(param);
+				resultMap.put("data", data);
+			} catch (Exception e) {
+				e.getMessage();
+			}
+
 			return resultMap;
 		} else {
 			return null;

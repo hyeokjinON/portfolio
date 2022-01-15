@@ -7,7 +7,7 @@ import com.list.vo.ListVo;
 
 public interface ListService {
 
-	List<ListVo> selectList(Map<String, String> param) throws Exception;
+	List<ListVo> selectNoticeList(Map<String, String> param) throws Exception;
 
 	Map<String, Object> insertList(Map<String, String> param) throws Exception;
 

@@ -176,6 +176,11 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.4</version>
 		</dependency>
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-dbcp2</artifactId>
+		    <version>2.4.0</version>
+		</dependency>
 
 		<!-- 20180711 LTJ meg-exception jar 등록 -->
 		<dependency>
@@ -186,10 +191,17 @@
 		
 
 		<!-- PostgreSQL 9.1-901 -->
-		<dependency>
+<!--  		<dependency>
 		    <groupId>postgresql</groupId>
 		    <artifactId>postgresql</artifactId>
 		    <version>9.1-901.jdbc4</version>
+		</dependency> -->
+		
+		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+		<dependency>
+		    <groupId>org.postgresql</groupId>
+		    <artifactId>postgresql</artifactId>
+		    <version>42.2.3.jre7</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.jdatepicker/jdatepicker -->

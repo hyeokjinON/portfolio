@@ -3,7 +3,7 @@
 
 <mapper namespace="com.list.mapper.ListMapper">
 
-	<select id="selectList" resultType="com.list.vo.ListVo">
+	<select id="selectNoticeList" resultType="com.list.vo.ListVo">
 		select *, ((rnum-1) / #{pageSize}::numeric )+1 pageIdx
 		from (
 			select
@@ -15,9 +15,9 @@
 				id,
 				name,
 				cretr_id,
-				cret_dt,
+				to_char(cret_dt, 'YYYY-MM-DD HH24:MI:SS') as cret_dt,
 				amdr_id,
-				amd_dt
+				to_char(amd_dt, 'YYYY-MM-DD HH24:MI:SS') as amd_dt
 			from 
 				portfolio.list
 			<where>

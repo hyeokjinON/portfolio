@@ -2,10 +2,25 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "HTTP://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-<!--  	<mappers>
-		<mapper resource="mapper/NoticeMapper.xml"/>
-	</mappers> -->
-<!-- 	<typeAliases>
-		<typeAlias alias="ListVo" type="com.list.vo.ListVo" />
-	</typeAliases> -->
+    <settings>
+        <!-- http://www.mybatis.org/mybatis-3/ko/configuration.html -->
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="lazyLoadingEnabled" value="false"/>
+        <setting name="multipleResultSetsEnabled" value="true"/>
+        <setting name="useColumnLabel" value="true"/>
+        <setting name="useGeneratedKeys" value="false"/>
+        <setting name="defaultExecutorType" value="SIMPLE"/>
+        <setting name="defaultStatementTimeout" value="25000"/>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="jdbcTypeForNull" value="VARCHAR"/>
+        <!-- <setting name="callSettersOnNulls" value="true" /> -->
+    </settings>
+
+<!--     <typeAliases>
+        <typeAlias alias="article" type="com.list.vo.ListVo"/>
+    </typeAliases> -->
+ 
+<!--      <mappers>
+        <mapper resource="mapper/ListMapper.xml"/>
+    </mappers> -->
 </configuration>

@@ -11,7 +11,7 @@
 
 <body>
     <div class="contents">
-        <h2 class="doch2">게시판 관리 > 등록하기</h2>
+        <h2 class="doch2">게시판 관리 > 등록</h2>
         <table class="table_style01" border="0" cellpadding="0" cellspacing="0">
             <colgroup class="col_mtype02">
                 <col width="15%">
@@ -22,7 +22,7 @@
             <tbody>
                 <tr>
                     <th>작성자</th>
-                    <td colspan="3"><%=request.getParameter("userId")%></td>
+                    <td colspan="3">관리자<%-- <%=request.getParameter("userId")%> --%></td>
                 </tr>
                 <tr>
                     <th>제목</th>

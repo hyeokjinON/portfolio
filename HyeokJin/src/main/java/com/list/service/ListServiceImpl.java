@@ -1,6 +1,5 @@
 package com.list.service;
 
-import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,8 +18,8 @@ public class ListServiceImpl implements ListService{
 	private ListMapper listMapper;
 
 	@Override
-	public List<ListVo> selectList(Map<String, String> param) throws Exception {
-		return listMapper.selectList(param);
+	public List<ListVo> selectNoticeList(Map<String, String> param) throws Exception {
+		return listMapper.selectNoticeList(param);
 	}
 
 	@Override

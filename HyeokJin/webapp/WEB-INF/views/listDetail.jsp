@@ -158,8 +158,15 @@
             var url = "/list/selectDetail";
             var functionName = "callBack.ajaxNoticeSelect(data)";
             var parameter = common.setCommonParam();
-
-            parameter.listseq = listseq;
+			
+            var listseq_check;
+            if(listseq) {
+            	listseq_check = listseq;
+            } else {
+            	alert('잘못된 접근입니다.');
+            	location.href = "/mainList";
+            }
+            parameter.listseq = listseq_check;
 
             common.ajax(url, parameter, functionName, "POST");
         },

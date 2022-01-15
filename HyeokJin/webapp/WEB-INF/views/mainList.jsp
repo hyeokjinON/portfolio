@@ -43,14 +43,16 @@
         <table class="table_style02" border="0" cellspacing="0" cellpadding="0">
             <colgroup class="col_myype01">
                 <col width="10%">
-                <col width="60%">
-                <col width="30%">
+                <col width="40%">
+                <col width="25%">
+                <col width="25%">
             </colgroup>
             <thead>
                 <tr>
                     <th class="m_none">No.</th>
                     <th>제목</th>
                     <th>등록일시</th>
+                    <th>수정일시</th>
                 </tr>
             </thead>
             <tbody id="notice_list">
@@ -160,6 +162,11 @@
                     html += '<a href="#a" name="title">' + list[i].title + '</a>';
                     html += '</td>'
                     html += '<td>' + list[i].cret_dt + '</td>'
+                    var amd_dt = '';
+                    if(list[i].amd_dt) {
+                    	amd_dt = list[i].amd_dt;
+                    }
+                    html += '<td>' + amd_dt + '</td>'
 
                     html += '<input type="hidden" name="listseq" value="' + list[i].listseq + '" />';
                     html += '<input type="hidden" name="title" value="' + list[i].title + '" />';
@@ -211,6 +218,11 @@
                 html += '<a href="#a" name="title">' + list[i].title + '</a>';
                 html += '</td>'
                 html += '<td>' + list[i].cret_dt + '</td>'
+                var amd_dt = '';
+                if(list[i].amd_dt) {
+                	amd_dt = list[i].amd_dt;
+                }
+                html += '<td>' + amd_dt + '</td>'
 
                 html += '<input type="hidden" name="listseq" value="' + list[i].listseq + '" />';
                 html += '<input type="hidden" name="title" value="' + list[i].title + '" />';

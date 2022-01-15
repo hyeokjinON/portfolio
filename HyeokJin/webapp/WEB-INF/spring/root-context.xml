@@ -8,9 +8,9 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 
 	<!-- PostgreSQL JDBC setting -->
- 	<bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
-	    <property name="driverClass" value="org.postgresql.Driver" />
-	    <property name="url" value="$jdbc:postgresql://localhost:5432/postgres" />
+  	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+	    <property name="driverClassName" value="org.postgresql.Driver" />
+	    <property name="url" value="jdbc:postgresql://localhost:5432/postgres" />
 	    <property name="username" value="postgres"/>
 	    <property name="password" value="P@ssw0rd"/>
 	</bean>
@@ -18,8 +18,12 @@
 	<!-- mybatis setting -->
  	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 	    <property name="dataSource" ref="dataSource" />
-	    <property name="configLocation" value="/WEB-INF/config/mybatis-config.xml" />
+	    <!-- <property name="configLocation" value="/WEB-INF/config/mybatis-config.xml" /> -->
 	    <property name="mapperLocations" value="classpath:/mapper/*.xml" />
+		<!-- 트랜잭션 관리를 위한 것 -->
+	    <property name="transactionFactory">
+	    	<bean class="org.mybatis.spring.transaction.SpringManagedTransactionFactory" />
+	    </property>
 	</bean>
 
     <!-- scan for mappers -->
@@ -29,11 +33,47 @@
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 
-	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+ 	<!-- 
+ 	 추가안해도 상관없음
+ 	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg index="0" ref="sqlSessionFactory" />
     </bean>
 
- 	<context:component-scan base-package="com">
-        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	<bean id="txBaseManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+
+	<tx:annotation-driven transaction-manager="txBaseManager"/> -->
+
+
+	<!-- PostgreSQL JDBC setting (3.36.27.14) -->
+  	<bean id="dataSourceAWS" class="org.apache.commons.dbcp2.BasicDataSource">
+	    <property name="driverClassName" value="org.postgresql.Driver" />
+	    <property name="url" value="jdbc:postgresql://3.36.27.14:5432/postgres" />
+	    <property name="username" value="postgres"/>
+	    <property name="password" value="P@ssw0rd"/>
+	</bean>
+
+  	<bean id="sqlSessionFactoryAWS" class="org.mybatis.spring.SqlSessionFactoryBean">
+	    <property name="dataSource" ref="dataSourceAWS" />
+	    <!-- <property name="configLocation" value="/WEB-INF/config/mybatis-config.xml" /> -->
+	    <property name="mapperLocations" value="classpath:/mapper/*.xml" />
+	</bean>
+
+    <!-- scan for mappers (3.36.27.14) -->
+     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.**.mapper" />
+        <property name="annotationClass" value="org.apache.ibatis.annotations.Mapper"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactoryAWS"/>
+    </bean>
+
+ 	<bean id="sqlSessionAWS" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactoryAWS" />
+    </bean>
+
+	<context:component-scan base-package="com">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
     </context:component-scan>
 </beans>

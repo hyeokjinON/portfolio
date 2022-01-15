@@ -5,14 +5,13 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
 
 import com.list.vo.ListVo;
 
 @Mapper
 public interface ListMapper {
 
-	public List<ListVo> selectList(Map<String, String> param) throws SQLException;
+	public List<ListVo> selectNoticeList(Map<String, String> param) throws SQLException;
 
 	public int insertList(Map<String, String> param) throws SQLException;
 
