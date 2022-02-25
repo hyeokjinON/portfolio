@@ -33,8 +33,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.kt.meg.base.exception.ServiceException;
-
 
 
 
@@ -42,7 +40,7 @@ import com.kt.meg.base.exception.ServiceException;
 @RequestMapping("fileDownload")
 public class FileDownload {
 	
-	private static Logger log = LoggerFactory.getLogger("portal");
+	private static Logger log = LoggerFactory.getLogger("potal");
 	
 	@Autowired
 	FileDownloadUtil fileDownloadUtil;
@@ -57,7 +55,7 @@ public class FileDownload {
 	public void downloadFileController(HttpServletRequest req, HttpServletResponse res) throws IOException{
 		String name = req.getParameter("fileName").replaceAll("[/%]", "").replaceAll("\r", "").replaceAll("\n", "");
 		if(!CheckParamUtil.checkDownloadParam(name)){ 
-			throw new ServiceException(1107, "file name 오류");
+			log.info("file name 오류");
 		}
 		name = URLEncoder.encode(name, "UTF-8");  //한글깨짐 방지
 		String fileFullPath = Constant.uploadPath + req.getParameter("path").replaceAll("/", "") + "/" + req.getParameter("fileName").replaceAll("/", "");  // 서버에 맞는 업로드 기본 폴더
